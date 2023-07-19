@@ -1,7 +1,7 @@
 import React from 'react';
 import DataTable from 'react-data-table-component';
 import { Card } from '@mui/material' ;
-const Datatable =()=>{
+const Datatable = () =>{
   const columns = [
     {
       name:"ProjectName",
@@ -45,7 +45,7 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
@@ -57,7 +57,7 @@ const Datatable =()=>{
         reason : "Dealership",
         type : "External",
         division : "Filters",
-        catrgory : "Quality B" ,
+        category : "Quality B" ,
         priority : "Low",
         dept :"Strategy",
         location :"Delhi" ,
@@ -69,7 +69,7 @@ const Datatable =()=>{
         reason : "Transport",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality C" ,
+        category : "Quality C" ,
         priority : "Medium",
         dept :"Quality",
         location :"Mumbai" ,
@@ -81,7 +81,7 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
@@ -93,7 +93,7 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
@@ -105,7 +105,7 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
@@ -117,7 +117,7 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
@@ -129,7 +129,7 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
@@ -141,7 +141,7 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
@@ -153,7 +153,7 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
@@ -165,21 +165,24 @@ const Datatable =()=>{
         reason : "Business",
         type : "Internal",
         division : "Compressor",
-        catrgory : "Quality A" ,
+        category : "Quality A" ,
         priority : "High",
         dept :"Strategy",
         location :"Pune" ,
         status : "Running"
       }
-    ]
+    ];
   return (
-      <Card>
-      <DataTable 
+    <Card>
+     <DataTable 
         columns={columns}
         data = {data}
+        sortable 
+        pagination
       />
+    </Card>
+     
 
-      </Card>
   )
 }
 export default Datatable 
