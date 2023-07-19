@@ -5,6 +5,7 @@ import Dashboard from './Dashboard' ;
 import CreatePro from './CreatePro';
 import ProjectList from './ProjectList';
 import Graph from './Graph'
+import Drop from './Drop'
 const Routing = () => {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ const Routing = () => {
         <Route path='createpro' element={<CreatePro />}></Route>
         <Route path='projectlist' element={<ProjectList />}></Route>
         <Route path='graph' element={<Graph />}></Route>
+        <Route path='drop' element={<Drop />}></Route>
       </Routes>
     </BrowserRouter>
     

@@ -220,7 +220,7 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <h6 className='text-center mt-2'>Login to get Started</h6>
           <div className='mb-2 p-2'> 
->
+
             <label htmlFor='email'>Email</label>
             
             <input
@@ -231,7 +231,7 @@ const Login = () => {
               onChange={handleChange}
             />
            
-           {formErrors.password && <span className='text-danger'>{formErrors.password}</span>}
+           {formErrors.email && <span className='text-danger'>{formErrors.email}</span>}
           </div>
           <div className='mb-2 p-2'>
             <label htmlFor='password'>Password</label>

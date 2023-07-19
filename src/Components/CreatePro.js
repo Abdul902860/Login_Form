@@ -41,11 +41,11 @@ const MyForm = () => {
     <img src='logo.svg' alt="logo" style={{position:"relative", marginLeft:'300px'}}/>
     <img src='Header-bg.svg' alt='svgpro' style={{position:"absolute"}}/>
     </div>
-    <div className='form-container d-flex p-2 bg-white rounded m-1 vh-100' >
-    <Card style={{marginLeft:"100px", boxShadow:" 3px 5px 10px #888888"}}>
+    <div className=' p-2 bg-white rounded m-1 vh-100'    >
+    <Card style={{ boxShadow:" 3px 5px 10px #888888"}}>
       <Container>
         <Row className="justify-content-lg-center m-2">
-          <Row>
+,          <Row>
             <Col xs={12} lg={6}>
               <Form.Control
                 type="text"

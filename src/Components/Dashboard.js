@@ -1,11 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Graph from "./Graph"
 const Dashboard = () => {
+  const [data ,setData] = useState('');
   return (
     <>
-         <div>
+    <div>
       <img src='Header-bg.svg' alt='dashboard' />
+
     </div>
+      
+       
     <div>
       <Graph />
     </div>
